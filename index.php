@@ -29,7 +29,7 @@
     $host = "<rifandaniwebappserver.database.windows.net>";
     $user = "<rifandani>";
     $pass = "<098765Aa>";
-    $db = "<webappdb>";
+    $db = "<webappdb (rifandaniwebappserver/webappdb)>";
 
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
