@@ -27,7 +27,7 @@
  </form>
  <?php
     
-    // PHP Data Objects(PDO) Sample Code:
+/*    // PHP Data Objects(PDO) Sample Code:
     try {
         $conn = new PDO("sqlsrv:server = tcp:rifandaniwebappserver.database.windows.net,1433; Database = webappdb", "rifandani", "098765Aa");
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -36,12 +36,13 @@
         print("Error connecting to SQL Server.");
         die(print_r($e));
     }
-/*    
+*/    
+    
     // SQL Server Extension Sample Code:
     $connectionInfo = array("UID" => "rifandani", "pwd" => "098765Aa", "Database" => "webappdb", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
     $serverName = "tcp:rifandaniwebappserver.database.windows.net,1433";
     $conn = sqlsrv_connect($serverName, $connectionInfo);
-*/    
+    
 /*   
     $host = "rifandaniwebappserver.database.windows.net";
     $user = "rifandani";
@@ -74,7 +75,7 @@
             echo "Failed: " . $e;
         }
 
-        echo "<h3>Your're registered!</h3>";
+        echo "<h3>You're registered!</h3>";
     } else if (isset($_POST['load_data'])) {
         try {
             $sql_select = "SELECT * FROM Table_1";
