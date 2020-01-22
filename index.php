@@ -36,13 +36,13 @@
         print("Error connecting to SQL Server.");
         die(print_r($e));
     }
-    
+/*    
     // SQL Server Extension Sample Code:
     $connectionInfo = array("UID" => "rifandani", "pwd" => "098765Aa", "Database" => "webappdb", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
     $serverName = "tcp:rifandaniwebappserver.database.windows.net,1433";
     $conn = sqlsrv_connect($serverName, $connectionInfo);
-    
- /*   
+*/    
+/*   
     $host = "rifandaniwebappserver.database.windows.net";
     $user = "rifandani";
     $pass = "098765Aa";
