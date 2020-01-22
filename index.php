@@ -26,7 +26,7 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    <?php
+    
     // PHP Data Objects(PDO) Sample Code:
     try {
         $conn = new PDO("sqlsrv:server = tcp:rifandaniwebappserver.database.windows.net,1433; Database = webappdb", "rifandani", "098765Aa");
